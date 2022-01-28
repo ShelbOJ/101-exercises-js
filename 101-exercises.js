@@ -69,7 +69,7 @@ const handler = () => {
     // On the line below, create a variable named onMarsRightNow and assign it the boolean value of false
     // For more on variables, see https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables
 
-
+    var onMarsRightNow = false;
     assert(onMarsRightNow, false, "Exercise 1");
     addToDone("Exercise 1 is correct.");
 
@@ -77,7 +77,7 @@ const handler = () => {
     // For more on arrays, see https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays
     // Create a variable named fruits and assign it an array of strings containing the following fruits.
     // mango, banana, guava, kiwi, and strawberry.
-
+ 
 
     assert(
         fruits,

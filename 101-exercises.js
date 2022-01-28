@@ -58,7 +58,7 @@ const handler = () => {
     // Example problem setup: Create a variable named doingJSRightNow and assign it the boolean true.
     // The line below creates the variable named doingJSRightNow and assigns the boolean value true
     // To complete Exercise #0, uncomment the following line of JS
-    // var doingJSRightNow = true
+    var doingJSRightNow = true;
 
 
     // The lines below will test your answer. If you see an error, then it means that your answer is incorrect or incomplete.
@@ -70,6 +70,7 @@ const handler = () => {
     // For more on variables, see https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables
 
     var onMarsRightNow = false;
+
     assert(onMarsRightNow, false, "Exercise 1");
     addToDone("Exercise 1 is correct.");
 
@@ -90,6 +91,7 @@ const handler = () => {
     // Create a variable named vegetables and assign it an array of strings containing the following vegetables.
     // eggplant, broccoli, carrot, cauliflower, and zucchini
 
+    var vegetables = ["eggplant", "broccoli", "carrot", "cauliflower", "zucchini"];
 
     assert(
         vegetables,

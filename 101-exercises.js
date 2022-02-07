@@ -79,7 +79,8 @@ const handler = () => {
     // Create a variable named fruits and assign it an array of strings containing the following fruits.
     // mango, banana, guava, kiwi, and strawberry.
  
-    var fruits = ["mango", "banana", "guava", "kiwi", "strawberry"]""
+    var fruits = ["mango", "banana", "guava", "kiwi", "strawberry"];
+    
     assert(
         fruits,
         ["mango", "banana", "guava", "kiwi", "strawberry"],

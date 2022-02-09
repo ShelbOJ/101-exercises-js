@@ -198,8 +198,8 @@ const handler = () => {
     // This function generates a random number that is both positive and even
     //NEED TO TEST THIS ONE
 
-    function positiveEvenNumber() {
-        var randomNum = Math.ceil(Math.random() * 100);
+    function randomPositiveEvenNumber() {
+        var randomNum = Math.ceil(Math.random() * 100) + 10;
 
         if (randomNumber % 2 !== 0) {
             //recursive bc it's calling the function repeatedly until you get a number divisible by 2 (positive)
@@ -211,10 +211,10 @@ const handler = () => {
 
     // this function generates a random number that is both positive and odd
 
-    function positiveOddNumber() {
-        var randomNum = Math.ceil(Math.random() * 100);
+    function randomPositiveOddNumber() {
+        var randomNum = Math.ceil(Math.random() * 100) + 10;
 
-        if (randomNumber % 2 == 0) {
+        if (randomNumber % 2 === 0) {
             
             return randomPositiveOddNumber();
         }
@@ -224,13 +224,35 @@ const handler = () => {
 
 
     // this function generates a random number that is both negative and even.
+    //need help with this one
 
+    function randomNegativeEvenNumber() {
+        var randomNum = Math.ceil(Math.random() * -100) - 10;
+
+        if (randomNumber % 2 === 0) {
+            
+            return randomNumber();
+        }
+
+        return randomNegativeEvenNumber();
+    }
 
     // this function generates a random number that is both negative and odd.
 
+    function randomNegativeOddNumber() {
+        var randomNumber = Math.ceil(Math.random() * -100) - 10;
+        if (randomNumber % 2 === 0) {
+            return randomNegativeOddNumber();
+        }
+
+        return randomNumber;
+    }
 
     // The next 4 lines create variables that hold these generated random numbers
-
+    var positiveEvenNumber = randomPositiveEvenNumber();
+    var positiveOddNumber = randomPositiveOddNumber();
+    var negativeEvenNumber = randomNegativeEvenNumber();
+    var negativeOddNumber = randomNegativeOddNumber();
 
     // Writing functions
     // See https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions for help with writing functions
@@ -239,6 +261,9 @@ const handler = () => {
     // Example function defintion:
     // Write a sayHello function that adds the string "Hello, " to the beginning and "!" to the end of any given input.
 
+    function sayHello(name) {
+        return "Hello, " + name + "!";
+    }
 
     assert(sayHello("Jane"), "Hello, Jane!");
     assert(sayHello("Pat"), "Hello, Pat!");
@@ -249,6 +274,9 @@ const handler = () => {
     // Heres another example function definition
     // This plusTwo function takes in a variable and adds the number 2 to it.
 
+    function plusTwo(x) {
+        return x + 2;
+    }
 
     assert(plusTwo(3), 5, "3 plus 2 is five");
     assert(plusTwo(-2), 0, "-2 plus 2 is zero");
@@ -256,7 +284,10 @@ const handler = () => {
 
     // Exercise 11
     // Write a function definition for a function named addOne that takes in a number and returns that number plus one
-
+    
+    function addOne(x) {
+        return x + 1;
+    }
 
     assert(addOne(2), 3, "Exercise 11");
     assert(addOne(0), 1, "Exercise 11");

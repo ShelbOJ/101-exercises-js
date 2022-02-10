@@ -305,7 +305,9 @@ const handler = () => {
     // HINT - here are example functions using comparison operators https://gist.github.com/ryanorsinger/e843c7d0966993bd8193f0afabe16ae0
     // If you get stuck, be sure to check the example code and documentation listed above
 
-
+    function isPositive(x) {
+        return x > 0;
+    }
 
     assert(isPositive(0.25), true, "Exercise 12");
     assert(isPositive(0.00001), true, "Exercise 12");
@@ -322,6 +324,9 @@ const handler = () => {
     // Exercise 13
     // Write a function definition named isNegative that takes in a number and returns true or False if that number is negative.
 
+    function isNegative(x) {
+        return x <= 0;
+    }
 
     assert(isNegative(positiveOddNumber), false, "Exercise 13");
     assert(isNegative(positiveEvenNumber), false, "Exercise 13");
@@ -331,6 +336,10 @@ const handler = () => {
 
     // Exercise 14
     // Write a function definition named isOdd that takes in a number and returns true or false if that number is odd.
+
+    function isOdd(x) {
+        return x % 2 !== 0;
+    }
 
     assert(isOdd(positiveOddNumber), true, "Exercise 14");
     assert(isOdd(positiveEvenNumber), false, "Exercise 14");

@@ -140,7 +140,7 @@ const handler = () => {
 
     numbers.reverse();
 
-    assert(someNumbers, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1], "Exercise 7");
+    assert(numbers, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1], "Exercise 7");
     addToDone("Exercise 7 is correct");
 
     // Exercise 8
@@ -199,7 +199,7 @@ const handler = () => {
     //NEED TO TEST THIS ONE
 
     function randomPositiveEvenNumber() {
-        var randomNum = Math.ceil(Math.random() * 100) + 10;
+        var randomNumber = Math.ceil(Math.random() * 100) + 10;
 
         if (randomNumber % 2 !== 0) {
             //recursive bc it's calling the function repeatedly until you get a number divisible by 2 (positive)
@@ -212,7 +212,7 @@ const handler = () => {
     // this function generates a random number that is both positive and odd
 
     function randomPositiveOddNumber() {
-        var randomNum = Math.ceil(Math.random() * 100) + 10;
+        var randomNumber = Math.ceil(Math.random() * 100) + 10;
 
         if (randomNumber % 2 === 0) {
             
@@ -227,11 +227,11 @@ const handler = () => {
     //need help with this one
 
     function randomNegativeEvenNumber() {
-        var randomNum = Math.ceil(Math.random() * -100) - 10;
+        var randomNumber = Math.ceil(Math.random() * -100) - 10;
 
         if (randomNumber % 2 === 0) {
             
-            return randomNumber();
+            return randomNumber;
         }
 
         return randomNegativeEvenNumber();
@@ -350,6 +350,10 @@ const handler = () => {
 
     // Exercise 15
     // Write a function definition named isEven that takes in a number and returns true or false if that number is even.
+
+    function isEven(x) {
+        return x % 2 === 0;
+    }
 
     assert(isEven(2), true, "Exercise 15");
     assert(isEven(positiveOddNumber), false, "Exercise 15");

@@ -352,7 +352,7 @@ const handler = () => {
     // Write a function definition named isEven that takes in a number and returns true or false if that number is even.
 
     function isEven(x) {
-        return x % 2 === 0;
+        return x % 2 == 0;
     }
 
     assert(isEven(2), true, "Exercise 15");
@@ -367,6 +367,10 @@ const handler = () => {
     // Exercise 16
     // Write a function definition named identity that takes in any input and returns that input. Don't overthink this one!
 
+    function identity(x) {
+        return x;
+    }
+
     assert(identity(fruits), fruits, "Exercise 16");
     assert(identity(vegetables), vegetables, "Exercise 16");
     assert(identity(positiveOddNumber), positiveOddNumber, "Exercise 16");
@@ -380,7 +384,9 @@ const handler = () => {
     // Exercise 17
     // Write a function definition named isPositiveOdd that takes in a number and returns true or false if the value is both greater than zero and odd
 
-
+    function isPositiveOdd(x) {
+        return isPositive(x) && isOdd(x);
+    }
 
     assert(isPositiveOdd(3), true, "Exercise 17");
     assert(isPositiveOdd(positiveOddNumber), true, "Exercise 17");
@@ -392,6 +398,9 @@ const handler = () => {
     // Exercise 18
     // Write a function definition named isPositiveEven that takes in a number and returns true or false if the value is both greater than zero and even
 
+    function isPositiveEven(x) {
+        return isPositive(x) && isEven(x);
+    }
 
     assert(isPositiveEven(4), true, "Exercise 18");
     assert(isPositiveEven(positiveOddNumber), false, "Exercise 18");
@@ -403,6 +412,9 @@ const handler = () => {
     // Exercise 19
     // Write a function definition named isNegativeOdd that takes in a number and returns true or false if the value is both less than zero and odd.
 
+    function isNegativeOdd(x) {
+        return isNegative(x) && isOdd(x);
+    }
 
     assert(isNegativeOdd(-3), true, "Exercise 19");
     assert(isNegativeOdd(positiveOddNumber), false, "Exercise 19");
@@ -414,6 +426,9 @@ const handler = () => {
     // Exercise 20
     // Write a function definition named isNegativeEven that takes in a number and returns true or false if the value is both less than zero and even.
 
+    function isNegativeEven(x) {
+        return isNegative(x) && isEven(x);
+    }
 
     assert(isNegativeEven(-4), true, "Exercise 20");
     assert(isNegativeEven(positiveOddNumber), false, "Exercise 20");

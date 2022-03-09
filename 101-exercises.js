@@ -528,6 +528,14 @@ const handler = () => {
   // Exercise 26
   // Write a function definition named isMultipleOfThree that takes in a number and returns true or false if the number is evenly divisible by 3.
 
+  function isMultipleOfThree(x) {
+    if (x % 3 === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   assert(isMultipleOfThree(3), true, "Exercise 26");
   assert(isMultipleOfThree(15), true, "Exercise 26");
   assert(isMultipleOfThree(9), true, "Exercise 26");
@@ -537,6 +545,14 @@ const handler = () => {
 
   // Exercise 27
   // Write a function definition named isMultipleOfFive that takes in a number and returns true or false if the number is evenly divisible by 5.
+
+  function isMultipleOfFive(x) {
+    if (x % 5 === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
   assert(isMultipleOfFive(3), false, "Exercise 27");
   assert(isMultipleOfFive(15), true, "Exercise 27");
@@ -548,6 +564,14 @@ const handler = () => {
   // Exercise 28
   // Write a function definition named isMultipleOfBothThreeAndFive that takes in a number and returns true or false if the number is evenly divisible by both 3 and 5.
 
+  function isMultipleOfBothThreeAndFive(x) {
+    if (x % 3 === 0 && x % 5 === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   assert(isMultipleOfBothThreeAndFive(15), true, "Exercise 28");
   assert(isMultipleOfBothThreeAndFive(45), true, "Exercise 28");
   assert(isMultipleOfBothThreeAndFive(3), false, "Exercise 28");
@@ -557,6 +581,10 @@ const handler = () => {
 
   // Exercise 29
   // Write a function definition named square that takes in a number and returns the number times itself.
+
+  function square(x) {
+    return x * x
+    }
 
   assert(square(3), 9, "Exercise 29");
   assert(square(2), 4, "Exercise 29");
@@ -569,6 +597,10 @@ const handler = () => {
 
   // Exercise 30
   // Write a function definition named add that takes in two numbers and returns the sum.
+
+  function add(x,y) {
+    return x + y
+  }
 
   assert(add(3, 2), 5, "Exercise 30");
   assert(add(10, -2), 8, "Exercise 30");
